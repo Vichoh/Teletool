@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_pagina_principal"
+            android:icon="@drawable/ic_language_black_24dp"
+            android:title="@string/seccion_1"/>
+        <item
+            android:id="@+id/menu_perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/seccion_2"/>
+        <item
+            android:id="@+id/menu_ejercicio"
+            android:icon="@drawable/ic_directions_run_black_24dp"
+            android:title="@string/seccion_3"/>
+        <item
+            android:id="@+id/menu_calendario"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="@string/seccion_4"/>
+        <item
+            android:id="@+id/menu_institucion"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="@string/seccion_5"/>
+    </group>
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/otras_opciones">
+        <menu>
+            <item
+                android:id="@+id/menu_informacion"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/opcion_1"/>
+            <item
+                android:id="@+id/menu_enviar_estaditicas"
+                android:icon="@drawable/ic_backup_black_24dp"
+                android:title="@string/opcion_2"/>
+            <item
+                android:id="@+id/menu_cerrar_sesion"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/opcion_3"/>
+        </menu>
+    </item>
+</menu>

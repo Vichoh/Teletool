@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarCalendario"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="#F5F5F5"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnDerecha"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:background="#F5F5F5"
+                    android:layout_weight="0.11" />
+
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textoFechaSuperior"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:layout_weight="0.65" />
+
+
+                <ImageButton
+                    android:layout_height="match_parent"
+                    android:layout_width="52dp"
+                    android:id="@+id/btnIzquierda"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:background="#F5F5F5"
+                    android:layout_weight="0.12" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Calendario"
+            tools:ignore="MergeRootFrame">
+
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_height="250dp"
+                android:layout_width="match_parent">
+
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:toolbarId="@+id/toolbar"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:contentScrim="?attr/colorPrimary">
+
+
+
+                    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                        android:id="@+id/compactcalendar_view"
+                        android:layout_width="fill_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_height="250dp"
+                        app:compactCalendarTextSize="12sp"
+                        app:compactCalendarBackgroundColor="#FFFFFF"
+                        app:compactCalendarTextColor="#212121"
+                        app:compactCalendarCurrentSelectedDayBackgroundColor="#00BCD4"
+                        app:compactCalendarCurrentDayBackgroundColor="#2196F3"
+                        app:compactCalendarMultiEventIndicatorColor="#1976D2"
+                        />
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="5dp"
+                            android:background="#2196F3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:elevation="8dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/fechaInferior"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"/>
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:id="@+id/btnEjercicio"
+                            android:layout_marginTop="25dp"
+
+                            />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/calCita"
+                            android:elegantTextHeight="true"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:id="@+id/calNota"
+                            android:elegantTextHeight="true"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/sinEventos"
+                        android:elegantTextHeight="true"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="100dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnLocation"
+        android:src="@drawable/ic_add_white_24dp"
+        android:theme="@style/floatBtn"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="24dp"
+        app:backgroundTint="#2196F3"
+        />
+
+</RelativeLayout>

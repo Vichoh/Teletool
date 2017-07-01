@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manejo_notas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adrian.teletool10.ManejoNotas">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarNotas"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="#37474F"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#37474F"
+
+
+            >
+
+            <Button android:id="@+id/NotasCancelar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorTextIcon"
+                android:layout_weight="1"
+                android:background="#37474F"
+                android:text="Cancelar"
+                android:textSize="14sp"
+
+                />
+
+            <Button android:id="@+id/NotasGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorTextIcon"
+                android:layout_weight="1"
+                android:background="#37474F"
+                android:text="Guardar"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <EditText android:id="@+id/tituloNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textColorHint="#2196F3"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2196F3"
+            />
+
+
+
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:endYear="2100"
+            android:startYear="1900"
+            android:layout_gravity="center"
+            android:headerBackground="@color/colorPrimary"
+            >
+        </DatePicker>
+
+        <EditText android:id="@+id/detalleNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detalle"
+            android:textColorHint="#2196F3"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:theme="@style/MyEditText"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2196F3"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

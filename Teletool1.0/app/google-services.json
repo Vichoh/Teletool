@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "971283319059",
+    "firebase_url": "https://teletool-ba957.firebaseio.com",
+    "project_id": "teletool-ba957",
+    "storage_bucket": "teletool-ba957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971283319059:android:330605fd465a4546",
+        "android_client_info": {
+          "package_name": "com.example.adrian.teletool10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971283319059-0doofhin0j4gjone37qa3nhtggrf8910.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adrian.teletool10",
+            "certificate_hash": "6467C1C81ADC041768ADF51D5B23689C38F79DDD"
+          }
+        },
+        {
+          "client_id": "971283319059-o1kcm0gj75trm4u8i7196ks9knoga9ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD8YaTHBiTOXX9ysmxGOCqN_FzI9np5wM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971283319059-o1kcm0gj75trm4u8i7196ks9knoga9ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
